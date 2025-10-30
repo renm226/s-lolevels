@@ -1,0 +1,13 @@
+# C / C++ build artifacts
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+a.out
+core
+*.core
+*.dSYM/        # macOS debug dirs
+*.stackdump

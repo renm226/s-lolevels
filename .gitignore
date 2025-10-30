@@ -1,0 +1,26 @@
+# C / C++ build artifacts
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+a.out
+core
+*.core
+*.dSYM/        # macOS debug dirs
+*.stackdump
+
+# Common build directories
+/build/
+bin/
+obj/
+dist/
+target/
+
+*~ 
+*.swp
+.DS_Store
+.vscode/
+.idea/
