@@ -1,13 +1,21 @@
-# C / C++ build artifacts
-*.o
-*.obj
-*.so
-*.a
-*.dll
-*.exe
-*.out
-a.out
-core
-*.core
-*.dSYM/        # macOS debug dirs
-*.stackdump
+# Ignore everything by default
+*
+
+# Allow directories (so exceptions below work)
+!*/
+
+# Keep the .gitignore itself
+!.gitignore
+
+# Keep common source / build files we DO want in repo
+!*.c
+!*.h
+!*.hpp
+!*.hh
+!*.cpp
+!*.cc
+!Makefile
+!README*
+!*.mk
+!*.S
+!*.s
