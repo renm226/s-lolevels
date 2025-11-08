@@ -1,4 +1,3 @@
-// string_parser.c
 #include <stdio.h>
 #include <string.h>
 

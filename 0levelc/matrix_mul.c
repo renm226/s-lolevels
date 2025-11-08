@@ -1,4 +1,3 @@
-// matrix_mul.c
 #include <stdio.h>
 
 int main(void) {

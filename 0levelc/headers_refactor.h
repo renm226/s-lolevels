@@ -1,4 +1,3 @@
-// headers_refactor.h
 #ifndef MY_PROJECT_HEADERS_REFACTORED_H
 #define MY_PROJECT_HEADERS_REFACTORED_H
 

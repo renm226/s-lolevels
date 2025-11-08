@@ -1,4 +1,3 @@
-// factorial.c
 #include <stdio.h>
 
 unsigned long factorial(unsigned int n) {

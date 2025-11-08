@@ -1,4 +1,3 @@
-// file_io.c
 #include <stdio.h>
 #include <stdlib.h>
 

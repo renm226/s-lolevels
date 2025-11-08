@@ -1,4 +1,3 @@
-// headers_refactor.c
 #include <stdio.h>
 #include "headers_refactor.h"
 

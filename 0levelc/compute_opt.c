@@ -1,4 +1,3 @@
-// compute_opt.c
 // Simple example: precompute value then print - avoids redundant computation.
 
 #include <stdio.h>
