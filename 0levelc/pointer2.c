@@ -1,6 +1,6 @@
 #include <stdio.h>
 int height = 200;
-int *Ph = &height;
+int* Ph = &height;
 
 int main()
 {
