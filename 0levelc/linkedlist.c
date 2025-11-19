@@ -14,6 +14,7 @@ Node* list_insert_front(Node *head, int value) {
     n->next = head;
     return n;
 }
+// Function to print the linked list
 
 void list_print(Node *head) {
     while (head) {
