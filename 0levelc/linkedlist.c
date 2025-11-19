@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Definition of a singly linked list node
 
 typedef struct Node {
     int value;
