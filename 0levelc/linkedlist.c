@@ -6,6 +6,7 @@ typedef struct Node {
     int value;
     struct Node *next;
 } Node;
+// Function to insert a new node at the front of the list
 
 Node* list_insert_front(Node *head, int value) {
     Node *n = malloc(sizeof(Node));
