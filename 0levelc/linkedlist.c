@@ -24,6 +24,7 @@ void list_print(Node *head) {
     printf("NULL\n");
 }
 
+// Function to free the linked list
 void list_free(Node *head) {
     while (head) {
         Node *tmp = head;
