@@ -8,6 +8,7 @@ typedef struct {
     int data[QUEUE_CAPACITY];
     int front, rear, size;
 } Queue;
+// Function to initialize the queue
 
 void queue_init(Queue *q) {
     q->front = 0;
@@ -15,6 +16,7 @@ void queue_init(Queue *q) {
     q->size = 0;
 }
 
+// Function to add an element to the queue
 int enqueue(Queue *q, int value) {
     if (q->size == QUEUE_CAPACITY)
         return 0; // full
@@ -24,6 +26,7 @@ int enqueue(Queue *q, int value) {
     q->size++;
     return 1;
 }
+// Function to remove an element from the queue
 
 int dequeue(Queue *q) {
     if (q->size == 0) {
@@ -31,12 +34,14 @@ int dequeue(Queue *q) {
         exit(EXIT_FAILURE);
     }
 
+    
     int value = q->data[q->front];
     q->front = (q->front + 1) % QUEUE_CAPACITY;
     q->size--;
     return value;
 }
 
+// Example usage/main function
 int main() {
     Queue q;
     queue_init(&q);
