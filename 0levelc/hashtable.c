@@ -14,6 +14,7 @@ typedef struct Node {
 typedef struct {
     Node *buckets[TABLE_SIZE];
 } HashTable;
+// Simple hash function
 
 unsigned int hash(const char *key) {
     unsigned int h = 0;
