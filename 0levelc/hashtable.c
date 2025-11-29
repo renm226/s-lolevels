@@ -3,6 +3,7 @@
 #include <string.h>
 
 #define TABLE_SIZE 10
+// Definition of a hash table node
 
 typedef struct Node {
     char key[50];
