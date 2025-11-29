@@ -10,7 +10,7 @@ typedef struct Node {
     int value;
     struct Node *next;
 } Node;
-
+// Definition of the hash table structure
 typedef struct {
     Node *buckets[TABLE_SIZE];
 } HashTable;
