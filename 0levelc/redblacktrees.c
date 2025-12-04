@@ -44,7 +44,7 @@ Node* insertBST(Node* root, Node* n) {
     }
     return root;
 }
-
+// Inorder traversal to display the tree
 void inorder(Node* root) {
     if (!root) return;
     inorder(root->left);
