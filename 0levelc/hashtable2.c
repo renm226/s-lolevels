@@ -4,7 +4,7 @@
 #include <string.h>
 // Definition of hashtable size
 #define TABLE_SIZE 10
-
+// Definition of a hash table entry
 typedef struct {
     char key[50];
     int value;
