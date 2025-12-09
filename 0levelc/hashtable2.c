@@ -10,7 +10,7 @@ typedef struct {
     int value;
     int used; // 0 = empty, 1 = used
 } HashEntry;
-
+// Definition of the hash table structure
 typedef struct {
     HashEntry table[TABLE_SIZE];
 } HashTable;
