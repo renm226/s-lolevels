@@ -14,7 +14,7 @@ typedef struct {
 typedef struct {
     HashEntry table[TABLE_SIZE];
 } HashTable;
-
+// Simple hash function
 unsigned int hash(const char *key) {
     unsigned int h = 0;
     while (*key) h = (h * 31) + *key++;
