@@ -48,6 +48,7 @@ HashEntry* search(HashTable *ht, const char *key) {
     }
     return NULL;
 }
+// Example usage/main function
 
 int main() {
     HashTable ht = {0};
