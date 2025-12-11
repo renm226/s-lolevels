@@ -36,7 +36,7 @@ void insert(HashTable *ht, const char *key, int value) {
     ht->table[idx].value = value;
     ht->table[idx].used = 1;
 }
-
+// Function to search for a value by key in the hash table
 HashEntry* search(HashTable *ht, const char *key) {
     unsigned int idx = hash(key);
     unsigned int start = idx;
