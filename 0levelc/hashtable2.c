@@ -20,7 +20,7 @@ unsigned int hash(const char *key) {
     while (*key) h = (h * 31) + *key++;
     return h % TABLE_SIZE;
 }
-
+//  Function to insert a key-value pair into the hash table
 void insert(HashTable *ht, const char *key, int value) {
     unsigned int idx = hash(key);
     unsigned int start = idx;
