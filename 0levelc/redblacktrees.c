@@ -9,7 +9,7 @@ typedef struct Node {
     Color color;
     struct Node *left, *right, *parent;
 } Node;
-
+// Function to create a new Red-Black tree node
 Node* newNode(int key) {
     Node* n = malloc(sizeof(Node));
     n->key = key;
