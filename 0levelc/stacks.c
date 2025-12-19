@@ -10,6 +10,7 @@ typedef struct {
     int data[STACK_CAPACITY];
     int top;
 } Stack;
+// Function to initialize the stack
 
 void stack_init(Stack *s) {
     s->top = -1;
