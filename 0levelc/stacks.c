@@ -33,6 +33,7 @@ int stack_pop(Stack *s) {
     return s->data[s->top--];
 }
 
+// Example usage/main function
 int main() {
     Stack s;
     stack_init(&s);
