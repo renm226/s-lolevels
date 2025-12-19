@@ -16,6 +16,7 @@ void stack_init(Stack *s) {
     s->top = -1;
 }
 
+// Function to push an element onto the stack
 int stack_push(Stack *s, int value) {
     if (s->top == STACK_CAPACITY - 1)
         return 0; // overflow
