@@ -19,10 +19,11 @@ void stack_init(Stack *s) {
 // Function to push an element onto the stack
 int stack_push(Stack *s, int value) {
     if (s->top == STACK_CAPACITY - 1)
-        return 0; // overflow
+        return 0; // an overflow
     s->data[++s->top] = value;
     return 1;
 }
+// Function to pop an element from the stack
 
 int stack_pop(Stack *s) {
     if (s->top == -1) {
