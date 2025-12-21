@@ -50,7 +50,7 @@ Node* search(HashTable *ht, const char *key) {
     }
     return NULL;
 }
-
+// Function to free the hash table
 void free_table(HashTable *ht) {
     for (int i = 0; i < TABLE_SIZE; i++) {
         Node *curr = ht->buckets[i];
