@@ -39,7 +39,7 @@ void insert(HashTable *ht, const char *key, int value) {
     node->next = ht->buckets[idx];
     ht->buckets[idx] = node;
 }
-
+// Function to search for a value by key in the hash table
 Node* search(HashTable *ht, const char *key) {
     unsigned int idx = hash(key);
     Node *curr = ht->buckets[idx];
