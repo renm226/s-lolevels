@@ -62,6 +62,7 @@ void free_table(HashTable *ht) {
     }
     free(ht);
 }
+// Example usage/main function
 
 int main() {
     HashTable *ht = create_table();
