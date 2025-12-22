@@ -29,6 +29,7 @@ HashTable* create_table() {
         ht->buckets[i] = NULL;
     return ht;
 }
+// Function to insert a key-value pair into the hash table
 
 void insert(HashTable *ht, const char *key, int value) {
     unsigned int idx = hash(key);
