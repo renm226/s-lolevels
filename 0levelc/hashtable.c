@@ -21,6 +21,7 @@ unsigned int hash(const char *key) {
     while (*key) h = (h * 31) + *key++;
     return h % TABLE_SIZE;
 }
+// Function to create a new hash table
 
 HashTable* create_table() {
     HashTable *ht = malloc(sizeof(HashTable));
