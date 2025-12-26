@@ -51,7 +51,7 @@ void inorder(Node* root) {
     printf("%d(%s) ", root->key, root->color == RED ? "R" : "B");
     inorder(root->right);
 }
-
+// Example usage/main function
 int main() {
     Node* root = NULL;
 
