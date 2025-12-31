@@ -17,7 +17,7 @@ TrieNode* createNode() {
         node->children[i] = NULL;
     return node;
 }
-
+// Function to insert a word into the trie
 void insert(TrieNode* root, const char* word) {
     TrieNode* node = root;
     while (*word) {
