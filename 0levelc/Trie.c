@@ -29,6 +29,7 @@ void insert(TrieNode* root, const char* word) {
     }
     node->isEndOfWord = true;
 }
+// Function to search for a word in the trie
 
 bool search(TrieNode* root, const char* word) {
     TrieNode* node = root;
