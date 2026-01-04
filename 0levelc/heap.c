@@ -70,3 +70,17 @@ int heap_extract_min(MinHeap *h) {
 }
 // Example usage/main function
 
+int main() {
+    MinHeap h;
+    heap_init(&h);
+
+    heap_insert(&h, 30);
+    heap_insert(&h, 10);
+    heap_insert(&h, 20);
+    heap_insert(&h, 5);
+
+    while (h.size > 0)
+        printf("%d ", heap_extract_min(&h));
+
+    return 0;
+}
