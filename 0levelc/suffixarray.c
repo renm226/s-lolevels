@@ -9,3 +9,21 @@ int cmpfunc(const void *a, const void *b, void *str) {
     int i2 = *(int *)b;
     return strcmp(s + i1, s + i2);
 }
+// Example usage/main function
+int main() {
+    char str[] = "banana";
+    int n = strlen(str);
+    int *suffixArr = malloc(n * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+        suffixArr[i] = i;
+
+    qsort_r(suffixArr, n, sizeof(int), cmpfunc, str);
+
+    printf("Suffix Array:\n");
+    for (int i = 0; i < n; i++)
+        printf("%d: %s\n", suffixArr[i], str + suffixArr[i]);
+
+    free(suffixArr);
+    return 0;
+}
