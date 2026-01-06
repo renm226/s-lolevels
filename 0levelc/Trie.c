@@ -50,7 +50,7 @@ void freeTrie(TrieNode* root) {
             freeTrie(root->children[i]);
     free(root);
 }
-
+// Example usage/main function
 int main() {
     TrieNode* root = createNode();
 
