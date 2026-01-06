@@ -42,6 +42,7 @@ bool search(TrieNode* root, const char* word) {
     }
     return node->isEndOfWord;
 }
+// Function to free the trie
 
 void freeTrie(TrieNode* root) {
     for (int i = 0; i < ALPHABET_SIZE; i++)
