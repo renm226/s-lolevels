@@ -75,7 +75,7 @@ Task pq_pop(PriorityQueue *pq) {
     heapify_down(pq, 0);
     return t;
 }
-
+// Example usage/main function
 int main() {
     PriorityQueue pq;
     pq_init(&pq);
