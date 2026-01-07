@@ -34,7 +34,7 @@ void heapify_up(PriorityQueue *pq, int idx) {
         idx = parent;
     }
 }
-
+// Function to remove and return the highest priority task from the queue
 void heapify_down(PriorityQueue *pq, int idx) {
     while (1) {
         int left = 2 * idx + 1;
