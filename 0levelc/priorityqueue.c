@@ -2,14 +2,14 @@
 // A simple priority queue implementation in C using a binary heap.
 #include <stdio.h>
 #include <stdlib.h>
-
+// Define maximum number of tasks
 #define MAX_TASKS 50
-
+// Task structure
 typedef struct {
     int priority;
     int task_id;
 } Task;
-
+//
 typedef struct {
     Task heap[MAX_TASKS];
     int size;
@@ -24,7 +24,7 @@ void swap(Task *a, Task *b) {
     *a = *b;
     *b = t;
 }
-
+// Helper functions for heap operations
 void heapify_up(PriorityQueue *pq, int idx) {
     while (idx > 0) {
         int parent = (idx - 1) / 2;
