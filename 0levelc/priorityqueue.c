@@ -56,7 +56,7 @@ void heapify_down(PriorityQueue *pq, int idx) {
         idx = smallest;
     }
 }
-
+// Public API functions
 void pq_push(PriorityQueue *pq, int task_id, int priority) {
     if (pq->size == MAX_TASKS) return;
 
